@@ -48,7 +48,12 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-mysql</artifactId>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.Luis0DEV</groupId>
+            <artifactId>Service_Register_Login</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

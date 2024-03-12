@@ -1,5 +1,6 @@
 package com.Luis0DEV.Application.ModelResponse;
 
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class ResponseModel {
 
-    public  ResponseModel(){
+    public ResponseModel(){
 
     }
 
@@ -19,6 +20,6 @@ public class ResponseModel {
     }
 
     public boolean Success;
-    public boolean Error;
+    public boolean Error ;
     public String Message;
 }
