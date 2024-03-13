@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalTime;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Getter
@@ -29,19 +29,20 @@ public class config_tb_rgs_register {
     @Column(name = "rgs_c_senha", nullable = false, length = 100)
     private String rgs_senha;
 
-    @Column(name = "rgs_c_cpf_rg", nullable = false, length = 100)
-    private String rgs_cpf_rg;
+    @Column(name = "rgs_c_cpf", nullable = false, columnDefinition = "LONGBLOB")
+    private String rgs_cpf;
 
-    @Column(name = "rgs_c_foto", nullable = true, length = 30)
-    private String rgs_foto;
+    @Lob
+    @Column(name = "rgs_c_foto", nullable = false, length = 30)
+    private Byte [] rgs_foto;
 
-    @Column(name = "rgs_c_genero", nullable = false, length = 30)
-    private String rgs_genero;
+    @Column(name = "rgs_c_genero", nullable = false)
+    private Boolean rgs_genero;
 
     @Column(name = "rgs_b_atividade", nullable = false)
     private Boolean rgs_atividade;
 
     @Column(name = "rgs_d_nascimento", nullable = false)
-    private LocalTime rgs_nascimento;
+    private LocalDate rgs_nascimento;
 
 }

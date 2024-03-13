@@ -10,6 +10,7 @@ public class RestException extends Exception {
     private Exception innerException;
 
     public RestException(Exception innerException) {
+
         this.innerException = innerException;
     }
     public ResponseModel tratarErro() {
