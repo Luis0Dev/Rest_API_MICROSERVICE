@@ -9,15 +9,13 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-
 import java.time.LocalDate;
 import java.util.UUID;
 
 @Getter
 @Setter
 @Entity
-public class tb_rgs_register
-{
+public class tb_rgs_register  {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     public UUID rgs_n_codigo;
@@ -29,4 +27,5 @@ public class tb_rgs_register
     public Boolean rgs_c_genero;
     public Boolean rgs_b_atividade;
     public LocalDate rgs_d_nascimento;
+
 }
