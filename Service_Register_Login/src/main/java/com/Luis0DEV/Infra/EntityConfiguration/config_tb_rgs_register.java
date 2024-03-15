@@ -29,9 +29,6 @@ public class config_tb_rgs_register {
     @Column(name = "rgs_c_senha", nullable = false, length = 100)
     private String rgs_senha;
 
-    @Column(name = "rgs_c_cpf", nullable = false, columnDefinition = "LONGBLOB")
-    private String rgs_cpf;
-
     @Lob
     @Column(name = "rgs_c_foto", nullable = false, length = 30)
     private Byte [] rgs_foto;

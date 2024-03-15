@@ -41,12 +41,6 @@ public class Register_Model {
     @Size(max = 100, message = "O tamanho máximo da senha é {max}")
     public String rgs_c_senha;
 
-    @JsonProperty("CPF")
-    @NotNull(message = "CPF é obrigatório")
-    @NotEmpty(message = "CPF é obrigatório")
-    @Size(max = 100, message = "O tamanho máximo do CPF é {max}")
-    public String rgs_c_cpf;
-
     @JsonProperty("Genero")
     @NotNull(message = "Gênero é obrigatório")
     @NotEmpty(message = "Gênero é obrigatório")
