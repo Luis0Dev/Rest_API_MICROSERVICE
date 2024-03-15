@@ -25,7 +25,7 @@ public class tb_rgs_register
     public String rgs_c_nome;
     public String rgs_c_email;
     public String rgs_c_senha;
-    public Byte [] rgs_c_foto;
+    public String rgs_c_foto;
     public Boolean rgs_c_genero;
     public Boolean rgs_b_atividade;
     public LocalDate rgs_d_nascimento;

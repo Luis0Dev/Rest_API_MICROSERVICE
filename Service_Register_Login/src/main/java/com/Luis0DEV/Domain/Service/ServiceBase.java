@@ -2,6 +2,7 @@ package com.Luis0DEV.Domain.Service;
 
 import com.Luis0DEV.Domain.Interface.Repositories.IRepositoryBase;
 import com.Luis0DEV.Domain.Interface.Services.IServiceBase;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.List;
 import java.util.UUID;
@@ -15,7 +16,6 @@ public class ServiceBase<T> implements IServiceBase<T> {
 
         _repositoryBase = repositoryBase;
     }
-
     public T Create(T tabelaGenerica){
 
         try{
@@ -34,6 +34,7 @@ public class ServiceBase<T> implements IServiceBase<T> {
             throw e;
         }
     }
+
     public List<T> GetByFilter(Predicate<T> filter){
         try{
             return _repositoryBase.GetByFilter(filter);

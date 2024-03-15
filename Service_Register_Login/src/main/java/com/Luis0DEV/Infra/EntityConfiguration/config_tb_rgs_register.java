@@ -31,7 +31,7 @@ public class config_tb_rgs_register {
 
     @Lob
     @Column(name = "rgs_c_foto", nullable = false, length = 30)
-    private Byte [] rgs_foto;
+    private String rgs_foto;
 
     @Column(name = "rgs_c_genero", nullable = false)
     private Boolean rgs_genero;
